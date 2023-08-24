@@ -74,7 +74,7 @@ variable "db_subnet_group_name" {
 
 variable "db_instance_number" {
   type = string
-  default = 2
+  default = 1
 }
 
 variable "db_instance_name" {
