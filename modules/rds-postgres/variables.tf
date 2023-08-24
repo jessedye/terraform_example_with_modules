@@ -38,3 +38,10 @@ variable "instance_name" {
   type = string
 }
 
+variable "subnets" {
+  type    = list(string)
+}
+
+variable "vpc_security_group_ids" {
+  type    = list(string)
+}

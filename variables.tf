@@ -42,42 +42,42 @@ variable "subnet_name" {
 
 ## DB Postgres Vars
 
-variable "engine" {
+variable "db_engine" {
   type = string
   default = "aurora-postgresql"
 }
 
-variable "engine_version" {
+variable "db_engine_version" {
   type = string
     default = "11.9"
 }
 
-variable "database_name" {
+variable "db_database_name" {
   type = string
    default = "example_db"
 }
 
-variable "instance_class" {
+variable "db_instance_class" {
   type = string
-  default = "db.t3.micro"
+  default = "db.t3.medium"
 }
 
-variable "cluster_identifier" {
+variable "db_cluster_identifier" {
   type = string
   default = "example-cluster"
 }
 
 variable "db_subnet_group_name" {
   type = string
-  default = "default"
+  default = "postgres_db_subnet_group"
 }
 
-variable "instance_number" {
+variable "db_instance_number" {
   type = string
   default = 2
 }
 
-variable "instance_name" {
+variable "db_instance_name" {
   type = string
   default = "pg-instance"
 }
