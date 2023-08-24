@@ -39,3 +39,45 @@ variable "subnet_name" {
   type    = list(string)
   default = ["subnet_1", "subnet_2", "subnet_3", "subnet_4"]
 }
+
+## DB Postgres Vars
+
+variable "engine" {
+  type = string
+  default = "aurora-postgresql"
+}
+
+variable "engine_version" {
+  type = string
+    default = "11.9"
+}
+
+variable "database_name" {
+  type = string
+   default = "example_db"
+}
+
+variable "instance_class" {
+  type = string
+  default = "db.t3.micro"
+}
+
+variable "cluster_identifier" {
+  type = string
+  default = "example-cluster"
+}
+
+variable "db_subnet_group_name" {
+  type = string
+  default = "default"
+}
+
+variable "instance_number" {
+  type = string
+  default = 2
+}
+
+variable "instance_name" {
+  type = string
+  default = "pg-instance"
+}
