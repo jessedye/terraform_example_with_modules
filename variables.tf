@@ -22,12 +22,12 @@ variable "name_tag" {
 
 variable "subnet_azs" {
   type    = list(string)
-  default = ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1c"]
+  default = ["us-east-2a", "us-east-2b", "us-east-2c", "us-east-2c"]
 }
 
 variable "subnet_cidr" {
   type    = list(string)
-  default = ["10.90.46.0/27", "10.90.46.32/27", "10.90.46.64/27", "10.90.46.224/27"]
+  default = ["10.0.0.0/24", "10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }
 
 variable "vpc_id" {

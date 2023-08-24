@@ -1,7 +1,7 @@
 terraform plan
 terraform apply
 
-
+terraform destroy
 
 formatting
 terraform fmt
