@@ -15,6 +15,7 @@ resource "aws_rds_cluster" "cluster" {
   database_name             = var.database_name
   db_subnet_group_name      = aws_db_subnet_group.subnet_group.name
   vpc_security_group_ids    = var.vpc_security_group_ids
+  skip_final_snapshot = true
 }
 
 resource "aws_rds_cluster_instance" "instance" {
